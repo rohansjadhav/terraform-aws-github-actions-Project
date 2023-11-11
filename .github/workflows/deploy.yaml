@@ -24,16 +24,16 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init
-        working-directory: ./terraform-aws-github-actions-Project
+        working-directory: ./Terraform-code
       - name: Terraform Validate
         id: validate
         run: terraform validate
-        working-directory: ./terraform-aws-github-actions-Project
+        working-directory: ./Terraform-code
       - name: Terraform Plan
         id: plan
         run: terraform plan
-        working-directory: ./terraform-aws-github-actions-Project
+        working-directory: ./Terraform-code
       - name: Terraform Apply
         id: apply
         run: terraform apply --auto-approve
-        working-directory: ./terraform-aws-github-actions-Project
+        working-directory: ./Terraform-code
