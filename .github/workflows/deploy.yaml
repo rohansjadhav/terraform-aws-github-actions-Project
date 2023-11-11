@@ -1,9 +1,9 @@
 name: Terraform CICD Pipeline for Deploying AWS resources.
-run-name: ${{ github.actor }} has triggerd the pipeline.
+run-name: ${{ github.actor }} has triggered the pipeline.
 
 on:
   push:
-    branchs:
+    branches:
       - "main"
 
 env: 
